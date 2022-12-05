@@ -15,7 +15,6 @@ function loadJSON(path) {
 		if(xhr.readyState === XMLHttpRequest.DONE) {
 			if (xhr.status === 200) {
 				let data = JSON.parse(xhr.responseText);
-				console.log('lol',xhr.responseText);
 				localStorage.setItem('allProducts', JSON.stringify(data));
         localStorage.setItem('active', 'cat-all');
         localStorage.setItem('cartItems', 0);

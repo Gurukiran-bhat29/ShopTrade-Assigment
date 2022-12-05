@@ -156,6 +156,7 @@ nav {
 }
 
 #prod-discount-price {
+  color: rgb(125, 122, 122);
   text-decoration: line-through;
 }
 
