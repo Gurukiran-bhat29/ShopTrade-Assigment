@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Shop Trade - Assignment</title>
+</head>
+
+<body onload="allProducts()">
+  <main class="container">
+    <div class="main-label">
+      All Products <span class="sub-label">(25 products)</span>
+    </div>
+    <div class="header">
+      <div class="nav-link">
+        <label class="nav-label">FILTERS: </label>
+        <button id="cat-all" class="nav-item active" onclick="allProducts(event)">All Products</button>
+        <button id="T-shirt" class="nav-item" onclick="filteredProduct(event)">Tee Shirts</button>
+        <button id="shirt" class="nav-item" onclick="filteredProduct(event)">Shirt</button>
+        <button id="Denim" class="nav-item" onclick="filteredProduct(event)">Denim</button>
+        <button id="jacket" class="nav-item" onclick="filteredProduct(event)">Sweatshirts</button>
+      </div>
+      <div class="cart-image">
+        <img 
+          src='https://cdn-icons-png.flaticon.com/512/263/263142.png' 
+          width="50" height="50"  alt="Cart"
+        />
+        <label id="cart-count"></label>
+      </div>
+    </div>
+
+    <div class="product-list-container" id="product-container"></div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>
