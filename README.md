@@ -1,0 +1,1 @@
+# ShopTrade-Assigment
